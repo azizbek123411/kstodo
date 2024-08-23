@@ -36,7 +36,7 @@ class _AddToDoState extends State<AddToDo> {
       descriptionController.clear();
       Navigator.pop(context);
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           backgroundColor: Colors.blue,
           content: Text(
             'Succesfully Added',
@@ -48,10 +48,10 @@ class _AddToDoState extends State<AddToDo> {
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           backgroundColor: Colors.red,
           content: Text(
-            'Error Occured',
+            'Error Occurred',
             style: TextStyle(
               color: Colors.white,
             ),
